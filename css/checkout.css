@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway";
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 20px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.breacrumb {
+  margin-top: 4rem;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  line-height: 1.25rem;
+  margin-top: 2rem;
+}
+.body .left {
+  width: 100%;
+}
+.body .payment {
+  display: flex;
+  margin-top: 1rem;
+}
+.body .payment .col {
+  display: grid;
+}
+.body .payment .col .form-group {
+  margin-top: 8px;
+}
+.body .payment .col .form-group input {
+  border: none;
+}
+.body .finish {
+  display: flex;
+  justify-content: space-between;
+}
+.body .btn-finish {
+  display: flex;
+  justify-content: flex-end;
+}
+.body .btn-finish button {
+  width: 180px;
+}
+.body .total ul {
+  list-style-type: circle;
+  margin-top: 2rem;
+}
+.body .total ul li {
+  margin-bottom: 1rem;
+}
+.body .promo-info {
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 820px) {
+  .body {
+    display: block;
+  }
+}
+@media screen and (max-width: 640px) {
+  .background {
+    min-width: 1280px;
+  }
+
+  .cart {
+    width: 1280px;
+    display: grid;
+  }
+  .cart .item {
+    width: 1280px;
+  }
+
+  #summary {
+    width: 100%;
+  }
+  #summary h1 {
+    text-align: center;
+  }
+  #summary .payment .px-2 {
+    width: 100%;
+    display: flex;
+    margin-bottom: 8px;
+  }
+  #summary .payment .px-2 .form-group {
+    margin-right: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .body {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=checkout.css.map */
